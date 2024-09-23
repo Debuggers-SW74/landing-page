@@ -169,7 +169,7 @@ section {
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -182,7 +182,7 @@ section {
 }
 
 .navbar a:hover:before,
-.navbar li:hover > a:before,
+.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -191,7 +191,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -249,7 +249,7 @@ section {
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li > a:before {
+.navbar-mobile>ul>li>a:before {
   left: 20px;
 }
 
@@ -262,7 +262,7 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #3f43fd;
 }
 
@@ -398,9 +398,11 @@ section {
 .about {
   padding: 40px 0 0 0;
 }
+
 .icon-boxes {
   background-color: white;
 }
+
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
@@ -464,4 +466,40 @@ section {
   position: relative;
   margin-top: 50px;
   max-height: 500px;
+}
+
+/*--------------------------------------------------------------
+# Details
+--------------------------------------------------------------*/
+.details .content+.content {
+  margin-top: 100px;
+}
+
+.details .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #010483;
+}
+
+.detail-carrier {
+  margin-top: 100px;
+}
+
+.details .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details .content ul li {
+  padding-bottom: 10px;
+}
+
+.details .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1acc8d;
+}
+
+.details .content p:last-child {
+  margin-bottom: 0;
 }
