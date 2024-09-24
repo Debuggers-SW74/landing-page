@@ -324,7 +324,7 @@ section {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+.navbar > ul > li > a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -337,7 +337,7 @@ section {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -346,7 +346,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -404,7 +404,7 @@ section {
   transition: 0.3s;
 }
 
-.navbar-mobile>ul>li>a:before {
+.navbar-mobile > ul > li > a:before {
   left: 20px;
 }
 
@@ -417,7 +417,7 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #3f43fd;
 }
 
@@ -626,7 +626,7 @@ section {
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
-.details .content+.content {
+.details .content + .content {
   margin-top: 100px;
 }
 
@@ -657,4 +657,18 @@ section {
 
 .details .content p:last-child {
   margin-bottom: 0;
+}
+.team {
+  background: #fff;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
 }
