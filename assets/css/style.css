@@ -145,6 +145,7 @@ section {
   height: 100%;
   bottom: 8%;
 }
+
 @media (max-width: 1200px) {
   .contact iframe {
     position: relative;
@@ -212,6 +213,7 @@ section {
   font-size: 14px;
   margin-top: 20px;
 }
+
 .social a {
   display: inline-block;
   width: 50px;
@@ -224,10 +226,12 @@ section {
   color: #0205a1;
   line-height: 0;
 }
+
 .footer {
   background: #0205a1;
   color: #fff;
 }
+
 .social a span {
   display: inline-block;
   left: 50%;
@@ -324,7 +328,7 @@ section {
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -337,7 +341,7 @@ section {
 }
 
 .navbar a:hover:before,
-.navbar li:hover > a:before,
+.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -346,7 +350,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #fff;
 }
 
@@ -404,7 +408,7 @@ section {
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li > a:before {
+.navbar-mobile>ul>li>a:before {
   left: 20px;
 }
 
@@ -417,7 +421,7 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #3f43fd;
 }
 
@@ -548,6 +552,88 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f5f5ff;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.features .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.features .icon-box h3 {
+  color: #010483;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box:hover {
+  background: #ebebff;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: #f5f5ff;
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: #1acc8d;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #010483;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
@@ -626,7 +712,7 @@ section {
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
-.details .content + .content {
+.details .content+.content {
   margin-top: 100px;
 }
 
@@ -658,6 +744,7 @@ section {
 .details .content p:last-child {
   margin-bottom: 0;
 }
+
 .team {
   background: #fff;
 }
