@@ -89,3 +89,39 @@ section {
   font-family: "Poppins", sans-serif;
   color: #010483;
 }
+
+.cta-section {
+  background: #0205a1;
+  color: #1acc8d;
+}
+
+.cta-section img {
+  height: 80px;
+}
+
+.cta-section h2 {
+  color: #1acc8d;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+.team {
+  background: #fff;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
