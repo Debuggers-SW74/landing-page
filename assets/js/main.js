@@ -1,4 +1,4 @@
-(function() {
+(function () {
   "use strict";
 
   const select = (el, all = false) => {
@@ -20,10 +20,9 @@
     }
   }
 
-   const onscroll = (el, listener) => {
+  const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
-
 
   let selectHeader = select('#header')
   if (selectHeader) {
@@ -39,6 +38,7 @@
   }
 
   let backtotop = select('.back-to-top')
+
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -50,7 +50,8 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-  on('click', '.mobile-nav-toggle', function(e) {
+
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -59,8 +60,23 @@
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
- 
-   window.addEventListener('load', () => {
+
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
